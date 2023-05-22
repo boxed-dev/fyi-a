@@ -1,0 +1,97 @@
+/* Reset default browser styles */
+
+:root {
+    --hue: 14;
+    --title-color: hsl(var(--hue), 4%, 100%);
+    --first-color: hsl(var(--hue), 91%, 54%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body styles */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #36393f;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Container styles */
+
+.container {
+    width: 100%;
+    max-width: 300px;
+    /* Adjusted width for mobile */
+    padding: 20px;
+    background-color: #36393f;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Heading styles */
+
+h1 {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* Input styles */
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #40444b;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+}
+
+
+/* Button styles */
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--first-color);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    background: #f04747;
+}
+
+
+/* Error message styles */
+
+#error-message {
+    color: #f04747;
+    margin-top: 10px;
+}
+
+
+/* Responsive styles */
+
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: 100%;
+        border-radius: 0;
+    }
+    body {
+        justify-content: flex-start;
+    }
+}
